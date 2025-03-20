@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Ticket</title>
 </head>
 <body>
-$END$
+<script>
+    let age = +prompt("Nhập tuổi:")
+    if (age < 6) {
+        document.write("Miễn phí");
+    } else if (age < 18) {
+        document.write("Vé trẻ em");
+    } else if (age < 60) {
+        document.write("Vé người lớn");
+    } else {
+        document.write("Vé người cao tuổi");
+    }
+</script>
 </body>
 </html>

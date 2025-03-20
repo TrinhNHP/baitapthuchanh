@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Click</title>
 </head>
 <body>
-$END$
+<form>
+    <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" alt ="Loading" style = "width: 30%"/>
+    <p>Click button below to move the image to left</p>
+    <input type="button" value="on click" onclick="moveLeft( )"/>
+</form>
+<script>
+    let img0bj= null;
+    img0bj= document.getElementById("myImage");
+    function init( ) {
+        img0bj= document.getElementById("myImage");
+        img0bj.style.position = "relative";
+        img0bj.style.left = "0px";
+    }
+    function moveLeft( ) {
+        img0bj.style.left = parseInt(img0bj.style.left) + 10 + "px";
+    }
+    window.onload = init;
+</script>
 </body>
 </html>

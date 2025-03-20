@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<form action="/convert" method="post">
+    <h2>currency exchange</h2>
+    amount
+    <input type="number" id="amount" placeholder="amount">
+
+    from currency
+    <select id="fromCurrency">
+        <option value="VND">VND</option>
+        <option value="JPY">JPY</option>
+    </select>
+    to currency
+    <select id="toCurrency">
+        <option value="VND">VND</option>
+        <option value="JPY">JPY</option>
+    </select>
+    <button type="button"   onclick="convertCurrency()">Convert</button>
+
+    <p id="result">Result</p>
+    <script src="exchange.js"></script>
+</form>
 </body>
 </html>
